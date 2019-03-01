@@ -5,4 +5,4 @@ from .models import Timecard
 class NewTimecard(forms.ModelForm):
     class Meta:
         model = Timecard
-        fields = '__all__'
+        fields = ['name','school','subject','hours','dateOfWork']
