@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Timecard</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    Are you sure you want to delete "{{ selectedcard }}" ?
+    <input type="submit" value="Delete">
+    <button>Don't Delete</button>
+</form>
+</body>
+</html>

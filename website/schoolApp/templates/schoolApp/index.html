@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Index</h1>
+<a href="{% url 'timecard' %}">Add New Timecard</a>
+{% for allcards in timecard %}
+
+<p><a href="{% url 'edit' allcards.id %}">
+    {{ allcards.name }}</a></p>
+<p>{{ allcards.school }}</p>
+<p>{{ allcards.subject }}</p>
+<p>{{ allcards.hours }}</p>
+<p>{{ allcards.dateOfWork }}</p>
+<p><a href="{% url 'delete' allcards.id %}">Delete Timecard</a> </p>
+<hr/>
+
+{% endfor %}
+</body>
+</html>
