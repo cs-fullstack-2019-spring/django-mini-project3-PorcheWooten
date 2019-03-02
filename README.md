@@ -1,3 +1,7 @@
+### POINTS: 1.5
+### KEY: Mostly good, but no comments :-/
+
+
 # Mini-Project Django
 
 THIS IS A SOLO PROJECT.
